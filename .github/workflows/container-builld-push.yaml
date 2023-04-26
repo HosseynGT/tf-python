@@ -21,8 +21,8 @@ jobs:
       - name: Build web container image
         run: |
           docker build -f Dockerfile \
-            -t jmitchel3/tf-python:latest \
-            -t jmitchel3/f-python:${GITHUB_SHA::7}-${GITHUB_RUN_ID::5} \
+            -t hossaingt/tf-python:latest \
+            -t hossaingt/f-python:${GITHUB_SHA::7}-${GITHUB_RUN_ID::5} \
             .
        - name: Push container
          run: |
